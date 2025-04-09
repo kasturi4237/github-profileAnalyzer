@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+// import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { Search, ExternalLink, AlertCircle } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '../components/ui/alert';
 
@@ -154,7 +154,7 @@ const GitHubProfileAnalyzer: React.FC = () => {
             <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-100">
               <h2 className="text-xl font-semibold mb-4">Daily Commits (Last 30 Days)</h2>
               <div className="h-64">
-                <ResponsiveContainer width="100%" height="100%">
+                {/* <ResponsiveContainer width="100%" height="100%">
                   <LineChart data={commitData}>
                     <XAxis 
                       dataKey="date" 
@@ -172,7 +172,7 @@ const GitHubProfileAnalyzer: React.FC = () => {
                       activeDot={{ r: 5 }}
                     />
                   </LineChart>
-                </ResponsiveContainer>
+                </ResponsiveContainer> */}
               </div>
               <p className="text-xs text-center text-slate-500 mt-4">
                 Note: This is sample data. In a real application, actual commit data would be fetched from GitHub's API.
